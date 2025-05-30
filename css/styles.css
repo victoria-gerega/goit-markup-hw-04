@@ -126,6 +126,12 @@ address{
 }
 .slogan {
   background-color: #2e2f42;
+  background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/office.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .slogan-name {
@@ -174,10 +180,29 @@ address{
   display: flex;
   gap: 24px;
   justify-content: center;
+  padding-top: 120px;
 }
 
 .features-item {
   width: calc((1128px - 72px) / 4);
+}
+
+.feature-container {
+  position: relative;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  width: 264px;
+  height: 112px;
+  margin-bottom: 8px;
+  background-color: #f4f4fd;
+}
+
+.icon-features {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
 }
 
 .features-subtitle {
@@ -185,12 +210,13 @@ address{
   font-size: 20px;
   color: #2e2f42;
   letter-spacing: 0.02em;
-  padding-top: 120px;
+
 }
 .features-text {
   color: #434455;
   padding-bottom: 120px;
 }
+
 .team {
   background-color: #f4f4fd;
   padding-top: 120px;
@@ -213,7 +239,7 @@ address{
   padding-bottom: 72px;
 }
 .team-item {
-
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 .team-member {
   font-weight: 500;
@@ -225,6 +251,26 @@ address{
 .team-description {
   color: #434455;
 }
+
+.socnet-container{
+  display: flex;
+  justify-items: center;
+  align-content: center;
+  gap: 24px;
+  padding-top: 8px;
+}
+.socnet-link {
+  display: flex;
+  background-color: #4d5ae5;
+  padding: 12px;
+  border-radius: 50%;
+}
+
+.socnet-icon {
+  fill: #F4F4FD;
+
+}
+
 .portfolio {
   background-color: #ffffff;
   padding-top: 120px;
@@ -297,4 +343,18 @@ address{
   max-width: 274px;
   padding-top: 16px;
   margin: 0;
+}
+
+.footer-info {
+  display: flex;
+}
+
+.footer-socmed {
+  padding-left: 120px;
+}
+
+.footer-social {
+  font-weight: 500px;
+  color: #ffffff;
+  padding-bottom: 16px;
 }
