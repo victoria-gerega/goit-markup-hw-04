@@ -32,13 +32,11 @@ img {
   display: block;
 }
 
-.container { 
+.container {
   max-width: 1440px;
-  padding-left:  
-  padding-right:  
-  margin: 0 auto; 
-  }
-  
+  margin: 0 auto;
+}
+
 .header-navigation {
   display: flex;
 }
@@ -48,7 +46,10 @@ img {
   padding-top: 24px;
   padding-bottom: 24px;
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
 }
+
 .header-logo {
   font-family: 'Raleway', sans-serif;
   color: #4d5ea5;
@@ -84,13 +85,32 @@ img {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding-bottom: 24px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.header-link.current {
+  position: relative;
+}
+
+.header-link.current::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #404bbf;
+}
+
 .header-link:hover,
-.header-link:focus {
+.header-link:focus,
+.header-link.current {
   color: #404bbf;
 }
 
-address{
+address {
   margin-left: auto;
 }
 
@@ -110,14 +130,16 @@ address{
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .contact-mail:hover,
 .contact-mail:focus {
   color: #404bbf;
 }
 
 .contact-number {
-  padding-right: 156px;;
+  padding-right: 156px;
 }
 
 .contact-number:hover,
@@ -126,7 +148,11 @@ address{
 }
 .slogan {
   background-color: #2e2f42;
-  background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/office.jpg);
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/office.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -202,7 +228,6 @@ address{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
 }
 
 .features-subtitle {
@@ -210,7 +235,6 @@ address{
   font-size: 20px;
   color: #2e2f42;
   letter-spacing: 0.02em;
-
 }
 .features-text {
   color: #434455;
@@ -239,7 +263,9 @@ address{
   padding-bottom: 72px;
 }
 .team-item {
-  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  background: #fff;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 .team-member {
   font-weight: 500;
@@ -247,17 +273,23 @@ address{
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  text-align: center;
+  padding-top: 32px;
 }
 .team-description {
   color: #434455;
+  text-align: center;
+  padding-bottom: 8px;
 }
 
-.socnet-container{
+.socnet-container {
   display: flex;
   justify-items: center;
   align-content: center;
   gap: 24px;
   padding-top: 8px;
+  padding-bottom: 32px;
+  padding-left: 16px;
 }
 .socnet-link {
   display: flex;
@@ -267,8 +299,7 @@ address{
 }
 
 .socnet-icon {
-  fill: #F4F4FD;
-
+  fill: #f4f4fd;
 }
 
 .portfolio {
@@ -356,5 +387,6 @@ address{
 .footer-social {
   font-weight: 500px;
   color: #ffffff;
+
   padding-bottom: 16px;
 }
