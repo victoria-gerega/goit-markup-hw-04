@@ -284,13 +284,13 @@ address {
 
 .socnet-container {
   display: flex;
-  justify-items: center;
-  align-content: center;
+  justify-content: center;
+  align-items: center;
   gap: 24px;
   padding-top: 8px;
   padding-bottom: 32px;
-  padding-left: 16px;
 }
+
 .socnet-link {
   display: flex;
   background-color: #4d5ae5;
@@ -329,6 +329,34 @@ address {
   border-right: 1px solid #e7e9fc;
   border-bottom: 1px solid #e7e9fc;
   border-left: 1px solid #e7e9fc;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.txt-overlay {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  color: #f4f4fd;
+  background-color: #4d5ae5;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding-top: 40px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.cases-item:hover .txt-overlay {
+  transform: translate(0);
+}
+
+.cases-item:hover .case-card {
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .cases-name {
@@ -337,9 +365,14 @@ address {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding-top: 32px;
+  padding-left: 16px;
 }
 .cases-description {
   color: #434455;
+  padding-top: 8px;
+  padding-left: 16px;
+  padding-bottom: 32px;
 }
 .footer {
   background-color: #2e2f42;
@@ -387,6 +420,9 @@ address {
 .footer-social {
   font-weight: 500px;
   color: #ffffff;
-
   padding-bottom: 16px;
+}
+
+.socnet-container {
+  padding-left: 0px;
 }
