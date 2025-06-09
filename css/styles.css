@@ -44,7 +44,6 @@ img {
 .header {
   background-color: #ffffff;
   padding-top: 24px;
-  padding-bottom: 24px;
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
@@ -60,6 +59,7 @@ img {
   letter-spacing: 0.03em;
   padding-left: 156px;
   padding-right: 76px;
+  padding-bottom: 24px;
 }
 .accent {
   font-family: 'Raleway', sans-serif;
@@ -72,9 +72,12 @@ img {
 }
 
 .header-list {
-  margin-left: 0;
   display: flex;
   gap: 40px;
+  margin-left: 0;
+}
+
+.header-item {
 }
 
 .header-link {
@@ -88,13 +91,14 @@ img {
 
 .current {
   position: relative;
+  color: #404bbf;
 }
 
 .current::after {
   content: '';
   position: absolute;
   left: 0;
-  bottom: -4px;
+  bottom: -1px;
   width: 100%;
   height: 4px;
   border-radius: 2px;
@@ -116,6 +120,7 @@ address {
 .contacts-list {
   display: flex;
   gap: 40px;
+  padding-right: 156px;
 }
 
 .contact-item > a {
@@ -129,19 +134,11 @@ address {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact-mail:hover,
-.contact-mail:focus {
+.direct-contact:hover,
+.direct-contact:focus {
   color: #404bbf;
 }
 
-.contact-number {
-  padding-right: 156px;
-}
-
-.contact-number:hover,
-.contact-number:focus {
-  color: #404bbf;
-}
 .slogan {
   background-color: #2e2f42;
   background-image: linear-gradient(
@@ -409,6 +406,8 @@ address {
 
 .footer-info {
   display: flex;
+  align-items: baseline;
+  margin-right: 120px;
 }
 
 .footer-socmed {
@@ -418,9 +417,28 @@ address {
 .footer-social {
   font-weight: 500px;
   color: #ffffff;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
 
-.socnet-container {
-  padding-left: 0px;
+.footer-socnet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding-top: 8px;
+  padding-bottom: 32px;
+}
+
+.footer-socnet-link {
+  display: flex;
+  background-color: #4d5ae5;
+  padding: 12px;
+  width: 40;
+  height: 40;
+  border-radius: 50%;
+}
+
+.footer-socnet-link:hover,
+.footer-socnet-link:focus {
+  background-color: #31d0aa;
 }
