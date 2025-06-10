@@ -139,7 +139,7 @@ address {
   color: #404bbf;
 }
 
-.slogan {
+.container-slogan {
   background-color: #2e2f42;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -205,6 +205,9 @@ address {
 
 .features-item {
   width: calc((1128px - 72px) / 4);
+  /*display: flex;
+  align-items: center;
+  justify-content: center;*/
 }
 
 .feature-container {
