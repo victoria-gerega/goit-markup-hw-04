@@ -373,9 +373,12 @@ address {
   padding-left: 16px;
   padding-bottom: 32px;
 }
-.footer {
+.container-footer {
+  display: flex;
+  align-items: baseline;
   background-color: #2e2f42;
   padding: 100px 0px;
+  margin-right: 120px;
 }
 
 .footer-card {
@@ -411,7 +414,6 @@ address {
 .footer-info {
   display: flex;
   align-items: baseline;
-  margin-right: 120px;
 }
 
 .footer-socmed {
