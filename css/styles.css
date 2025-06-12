@@ -139,7 +139,7 @@ address {
   color: #404bbf;
 }
 
-.container-slogan {
+.slogan {
   background-color: #2e2f42;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -205,12 +205,12 @@ address {
 
 .features-item {
   width: calc((1128px - 72px) / 4);
-  /*display: flex;
-  align-items: center;
-  justify-content: center;*/
 }
 
 .feature-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   border: 1px solid #8e8f99;
   border-radius: 4px;
@@ -259,11 +259,18 @@ address {
   text-align: center;
   padding-bottom: 72px;
 }
+
 .team-item {
   background: #fff;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
+
+.team-img {
+  padding: 32px 0;
+}
+
 .team-member {
   font-weight: 500;
   font-size: 20px;
@@ -271,12 +278,15 @@ address {
   letter-spacing: 0.02em;
   color: #2e2f42;
   text-align: center;
-  padding-top: 32px;
 }
+
 .team-description {
   color: #434455;
   text-align: center;
   padding-bottom: 8px;
+}
+
+.container-socnet {
 }
 
 .socnet-container {
@@ -292,8 +302,8 @@ address {
   display: flex;
   background-color: #4d5ae5;
   padding: 12px;
-  width: 40;
-  height: 40;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
 }
 
