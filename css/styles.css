@@ -434,9 +434,13 @@ address {
   margin: 0;
 }
 
-.footer-info {
+.container-footer {
   display: flex;
   align-items: baseline;
+}
+
+.footer-card {
+  margin-right: 120px;
 }
 
 .footer-socmed {
