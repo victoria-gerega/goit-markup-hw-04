@@ -28,6 +28,7 @@ p {
   letter-spacing: 0.02em;
   margin: 0 auto;
 }
+
 img {
   display: block;
 }
@@ -189,6 +190,7 @@ address {
 .buy-btn:focus {
   background-color: #404bbf;
 }
+
 .visually-hidden {
   height: 1px;
   overflow: hidden;
@@ -347,6 +349,16 @@ address {
   justify-content: center;
 }
 
+.cases-item {
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.cases-item:hover {
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  transform: translateY(0%);
+}
+
 .case-card {
   border-right: 1px solid #e7e9fc;
   border-bottom: 1px solid #e7e9fc;
@@ -363,22 +375,12 @@ address {
   position: absolute;
   top: 0;
   height: 100%;
+  width: 100%;
   color: #f4f4fd;
   background-color: #4d5ae5;
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding-top: 40px;
-  padding-left: 32px;
-  padding-right: 32px;
-}
-
-.cases-item:hover .txt-overlay {
-  transform: translate(0);
-}
-
-.cases-item:hover .case-card {
-  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
-    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  padding: 40px 32px;
 }
 
 .cases-name {
@@ -418,6 +420,7 @@ address {
   text-transform: uppercase;
   margin-bottom: 16px;
 }
+
 .footer-accent {
   font-family: 'Raleway', sans-serif;
   color: #f4f4fd;
@@ -427,6 +430,7 @@ address {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+
 .footer-text {
   color: #f4f4fd;
   max-width: 274px;
@@ -437,37 +441,42 @@ address {
 .container-footer {
   display: flex;
   align-items: baseline;
-}
-
-.footer-card {
   margin-right: 120px;
 }
 
+.footer-card {
+}
+
 .footer-socmed {
-  padding-left: 120px;
 }
 
 .footer-social {
-  font-weight: 500px;
+  font-weight: 500;
   color: #ffffff;
   margin-bottom: 16px;
 }
 
 .footer-socnet {
   display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 16px;
   padding-top: 8px;
   padding-bottom: 32px;
 }
 
+.footer-item {
+  width: 40px;
+  height: 40px;
+  transitiion: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .footer-socnet-link {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
   background-color: #4d5ae5;
   padding: 12px;
-  width: 40;
-  height: 40;
   border-radius: 50%;
 }
 
