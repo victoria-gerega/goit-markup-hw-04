@@ -33,18 +33,19 @@ img {
   display: block;
 }
 
-.container {
-  max-width: 1440px;
-  margin: 0 auto;
-}
-
 .header-navigation {
   display: flex;
+  align-items: center;
+}
+
+.container {
+  max-width: 1158px;
+  margin: 0 auto;
+  padding 0 15px;
 }
 
 .header {
   background-color: #ffffff;
-  padding-top: 24px;
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
@@ -58,10 +59,12 @@ img {
   text-transform: uppercase;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  padding-left: 156px;
-  padding-right: 76px;
-  padding-bottom: 24px;
+  margin-left: 156px;
+  margin-right: 76px;
+  margin-bottom: 24px;
+  margin-top: 24px;
 }
+
 .accent {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -82,10 +85,12 @@ img {
 }
 
 .header-link {
+  display: block;
   color: #2e2f42;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding-top: 24px;
   padding-bottom: 24px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -121,7 +126,6 @@ address {
 .contacts-list {
   display: flex;
   gap: 40px;
-  padding-right: 156px;
 }
 
 .contact-item > a {
@@ -152,6 +156,7 @@ address {
   background-size: cover;
   max-width: 1440px;
   margin: 0 auto;
+  padding: 188px 0;
 }
 
 .slogan-name {
@@ -160,12 +165,8 @@ address {
   line-height: 1.07143;
   letter-spacing: 0.02em;
   text-align: center;
-  padding-top: 188px;
-  padding-bottom: 48px;
-}
-
-.btn-container {
-  padding-bottom: 188px;
+  margin-bottom: 48px;
+  max-width: 496px;
 }
 
 .buy-btn {
@@ -184,6 +185,7 @@ address {
   min-width: 169px;
   height: 56px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-bottom: 188px;
 }
 
 .buy-btn:hover,
@@ -191,6 +193,9 @@ address {
   background-color: #404bbf;
 }
 
+.features {
+  padding: 120px 0;
+}
 .visually-hidden {
   height: 1px;
   overflow: hidden;
@@ -270,9 +275,8 @@ address {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-img {
-  display: block;
-  padding-right: 0px;
+.container-card {
+  padding: 32px 0;
 }
 
 .team-member {
@@ -298,8 +302,6 @@ address {
   display: flex;
   justify-content: center;
   gap: 24px;
-  padding-top: 8px;
-  padding-bottom: 32px;
 }
 
 .socnet-item {
@@ -406,11 +408,14 @@ address {
   padding-left: 16px;
   padding-bottom: 32px;
 }
+
+.footer {
+  padding: 100px 0;  background-color: #2e2f42;
+}
+
 .container-footer {
   display: flex;
   align-items: baseline;
-  background-color: #2e2f42;
-  padding: 100px 0px;
   margin-right: 120px;
 }
 
@@ -449,7 +454,6 @@ address {
 .container-footer {
   display: flex;
   align-items: baseline;
-  margin-right: 120px;
 }
 
 .footer-card {
