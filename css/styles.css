@@ -360,6 +360,8 @@ address {
 }
 
 .case-card {
+  position: relative;
+  overflow: hidden;
   border-right: 1px solid #e7e9fc;
   border-bottom: 1px solid #e7e9fc;
   border-left: 1px solid #e7e9fc;
@@ -374,6 +376,9 @@ address {
 .txt-overlay {
   position: absolute;
   top: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   height: 100%;
   width: 100%;
   color: #f4f4fd;
