@@ -412,11 +412,6 @@ address {
 .container-footer {
   display: flex;
   align-items: baseline;
-  margin-right: 120px;
-}
-
-.footer-card {
-  margin-left: 156px;
 }
 
 .footer-logo {
