@@ -53,16 +53,13 @@ img {
 
 .header-logo {
   font-family: 'Raleway', sans-serif;
-  color: #4d5ea5;
+  color: #4d5ae5;
   font-weight: 700;
   font-size: 18px;
   text-transform: uppercase;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  margin-left: 156px;
   margin-right: 76px;
-  margin-bottom: 24px;
-  margin-top: 24px;
 }
 
 .accent {
@@ -166,7 +163,7 @@ address {
 .buy-btn {
   font-family: 'Roboto', sans-serif;
   color: #ffffff;
-  background-color: #4d5ea5;
+  background-color: #4d5ae5;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
@@ -179,7 +176,6 @@ address {
   min-width: 169px;
   height: 56px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  margin-bottom: 188px;
 }
 
 .buy-btn:hover,
@@ -202,7 +198,6 @@ address {
   display: flex;
   gap: 24px;
   justify-content: center;
-  padding-top: 120px;
 }
 
 .features-item {
@@ -237,7 +232,6 @@ address {
 }
 .features-text {
   color: #434455;
-  padding-bottom: 120px;
 }
 
 .team {
@@ -416,7 +410,7 @@ address {
 
 .footer-logo {
   font-family: 'Raleway', sans-serif;
-  color: #4d5ea5;
+  color: #4d5ae5;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.16667;
